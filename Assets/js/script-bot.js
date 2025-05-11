@@ -14,6 +14,12 @@ const apiKey = process.env.GOOGLE_API_KEY;
 console.log(apiKey);  // Verifică dacă cheia API este citită corect
 
 
+// Accesează cheia API din variabilele de mediu
+const apiKey = process.env.GOOGLE_API_KEY;
+
+console.log(apiKey);  // Verifică dacă cheia API este citită corect
+
+
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 const userData={
