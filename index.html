@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Parintele Ilie Cleopa</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="Assets/css/style.css"> 
+        <style>
+           
+            body {
+                font-family: sans-serif;
+                min-height: 100vh; 
+                background-color: #f8f1e5; 
+                background-image: url('Assets/poze/parintele-cleopa.jpg'); 
+                background-size: cover;  
+                background-position: center;  
+                background-attachment: fixed; 
+                color: #4a3f35;
+            }
+        </style>
+
+        <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+<link rel="icon" href="assets/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+
+    </head>
+    
+<body>
+    <div class="container">
+       
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" class="nav-link menu-item" data-section="acasa">
+                    <span class="item-icon"><i class='bx bxs-home'></i></span>
+                    <span class="item-txt">Acasă</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="biografie">
+                    <span class="item-icon"><i class='bx bxs-bible'></i></span>
+                    <span class="item-txt">Biografie</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="canonizare">
+                    <span class="item-icon"><i class='bx bxs-church'></i></span>
+                    <span class="item-txt">Canonizare</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="scrieri">
+                    <span class="item-icon"><i class='bx bxs-book-open'></i></span>
+                    <span class="item-txt">Scrieri</span>
+                </a></li>
+                <li><a href="#" class="nav-link menu-item" data-section="prieteni">
+                    <span class="item-icon"><i class='bx bx-male-female'></i></span>
+                    <span class="item-txt">Prieteni</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="Citate">
+                    <span class="item-icon"> <i class='bx bx-edit'></i></span>
+                    <span class="item-txt">Citate</span>
+                </a></li>
+
+
+               
+                <li><a href="#" class="nav-link menu-item" data-section="galerie">
+                    <span class="item-icon"><i class='bx bxs-photo-album'></i></span>
+                    <span class="item-txt">Galerie foto</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="test">
+                    <span class="item-icon"><i class='bx bx-question-mark'></i></span>
+                    <span class="item-txt">Test</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="chatbot">
+                    <span class="item-icon"><i class='bx bxs-message-dots'></i></span>
+                    <span class="item-txt">Chat-bot</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="contact">
+                    <span class="item-icon"><i class='bx bxs-contact'></i></span>
+                    <span class="item-txt">Contact</span>
+                </a></li>
+
+                <li><a href="#" class="nav-link menu-item" data-section="bibliografie">
+                    <span class="item-icon"><i class='bx bx-dots-horizontal-rounded'></i></span>
+                    <span class="item-txt">Bibliografie</span>
+                </a></li>
+            </ul>
+        </div>
+
+    
+        <div class="main-content" id="main-content">
+        <h2>Vă invităm să descoperiți învățăturile și viața Părintelui Cleopa Ilie.</h2>
+        <p>Selectează o secțiune din meniu pentru a vedea conținutul.</p>
+        <div class="intro-text">
+            <p><strong>Proiect realizat de:</strong><br>
+            Paun Monica Georgiana și Treanta Daria Mihaela,<br>
+            de la Colegiul Național "Tudor Vladimirescu", Bucuresti, Clasa a X-a A.<br>
+            Profesori coordonatori: Mădalina Mareș și Silviu Batariuc</p>
+        </div>
+   
+
+
+    <script>
+        const content = {
+            acasa: `
+                <h2>Vă invităm să descoperiți învățăturile și viața Părintelui Cleopa Ilie.</h2>
+                <p>Selectează o secțiune din meniu pentru a vedea conținutul.</p>
+                <div class="intro-text">
+                    <p><strong>Proiect realizat de:</strong><br>
+                    Păun Monica Georgiana și Treanța Daria Mihaela,<br>
+                    de la Colegiul Național "Tudor Vladimirescu", București, Clasa a X-a A.<br>
+                    Profesori coordonatori: Mădalina Mareș și Silviu Batariuc</p>
+                </div>
+            `,
+
+            biografie: `
+           <h2>Biografie</h2>
+<div class="biografie-text">
+    <p><strong>Părintele Cleopa Ilie</strong> s-a născut pe <strong>10 aprilie 1912</strong> în comuna <strong>Sulița, județul Botoșani</strong>, într-o familie de țărani. A fost al <strong>zecelea dintre cei zece copii</strong> ai familiei Alexandru și Ana Ilie.</p>
+    <p><strong>Formarea spirituală:</strong> După absolvirea școlii primare, a urmat cursuri de teologie și a petrecut mai mulți ani în monahism. În perioada <strong>1935-1936</strong>, a îndeplinit ascultarea de păstor la oile Schitului <strong>Sihăstria</strong>.</p>
+    <p><strong>Monahism:</strong> A fost tuns în monahism în <strong>1937</strong>, primind numele <strong>Cleopa</strong>. În <strong>1944</strong> a fost hirotonit ierodiacon, iar în <strong>1945</strong> ieromonah.</p>
+    <p><strong>Stareț al Mănăstirii Sihăstria:</strong> În <strong>1947</strong>, Schitul Sihăstria a fost ridicat la rang de mănăstire, iar Părintele Cleopa a fost hirotesit <strong>arhimandrit</strong>.</p>
+    <p><strong>Retragerea în pădure:</strong> În <strong>1948</strong>, din cauza regimului comunist, Părintele Cleopa a fost nevoit să se retragă în pădurile din jurul mănăstirii pentru a scăpa de persecuțiile regimului.</p>
+    <p><strong>Activitate restauratoare:</strong> După <strong>1956</strong>, Părintele Cleopa a contribuit la revitalizarea vieții monahale în mănăstirile românești.</p>
+    <p><strong>Părintele Cleopa</strong> a avut o viață plină de har, dedicată slujirii lui Dumnezeu și învățăturii celor care veneau la el pentru ajutor duhovnicesc. A trecut la cele veșnice pe <strong>2 decembrie 1998</strong>, la vârsta de <strong>86 de ani</strong>, fiind înmormântat în cimitirul Mănăstirii Sihăstria.</p>
+</div>
+
+<div class="biografie-images">
+    <img src="Assets/poze/image1.jpg" alt="Imagine 1" class="biografie-image">
+    <img src="Assets/poze/image2.jpg" alt="Imagine 2" class="biografie-image">
+    <img src="Assets/poze/image3.jpg" alt="Imagine 3" class="biografie-image">
+    <img src="Assets/poze/image4.jpg" alt="Imagine 4" class="biografie-image">
+    <img src="Assets/poze/image5.jpg" alt="Imagine 5" class="biografie-image">
+</div>
+
+        `,
+            
+            canonizare: `<div class="canonizare-container">
+    <h2>Canonizare</h2>
+    <div class="canonizare-text">
+        <p><strong>Părintele Cleopa Ilie</strong>, o figură deosebită a monahismului românesc, a fost recunoscut pentru viața sa de neclintită credință și pentru învățăturile duhovnicești care au inspirat și continuă să inspire mii de credincioși.</p>
+        <p>După o viață dedicată slujirii lui Dumnezeu și poporului, Părintele Cleopa a fost propus pentru canonizare, iar procesul său a avansat semnificativ.</p>
+        <p><strong>În 2024</strong>, Biserica Ortodoxă Română a aprobat oficial canonizarea Părintelui Cleopa Ilie, iar acesta va fi inclus într-o listă de 16 sfinți români, printre care se numără și personalități precum Arsenie Boca, Dumitru Stăniloaie și Ilie Lăcătușu.</p>
+        <p>Canonizarea va fi un moment important în istoria Bisericii Ortodoxe Române, recunoscându-l pe Părintele Cleopa ca un sfânt al zilelor noastre.</p>
+        <p>Ziua de cinstire a Părintelui Cleopa Ilie va fi stabilită pe <strong>2 decembrie</strong>, în amintirea trecerii sale la cele veșnice, dar și pentru a omagia învățăturile și exemplul său de viață duhovnicească.</p>
+        <p>Deși Părintele Cleopa nu a fost canonizat imediat după moartea sa, recunoașterea oficială a sfințeniei sale subliniază importanța impactului său asupra credincioșilor din România și din întreaga lume ortodoxă.</p>
+    </div>
+
+    
+</div>
+            `,
+            
+            scrieri: `<div class="scrieri-container">
+    <h2>Scrieri</h2>
+    <div class="scrieri-text">
+        <div class="scriere-desc">
+            <h3>„Cuvântul lui Dumnezeu pentru astăzi”</h3>
+            <p>Un ghid spiritual zilnic, care adresează diverse teme legate de viața duhovnicească și de învățăturile biblice esențiale.</p>
+        </div>
+        <div class="scriere-desc">
+            <h3>„Părintele Cleopa despre rugăciune”</h3>
+            <p>O lucrare care explorează adâncitatea și semnificația rugăciunii în viața unui creștin, cu învățături despre importanța acesteia.</p>
+        </div>
+        <div class="scriere-desc">
+            <h3>„Spovedania arhiereilor”</h3>
+            <p>Un studiu despre spovedanie, care tratează atât aspectele teologice, cât și cele practice ale acestei taine fundamentale.</p>
+        </div>
+        <div class="scriere-desc">
+            <h3>„Despre credința ortodoxă”</h3>
+            <p>O lucrare care detaliază pilonii credinței ortodoxe și explică profund doctrina Bisericii Ortodoxe.</p>
+        </div>
+        <div class="scriere-desc">
+            <h3>„Minunile lui Dumnezeu din zidiri”</h3>
+            <p>O reflecție asupra minunilor divine observate în natură, în creație și în viața cotidiană a omului.</p>
+        </div>
+        <div class="scriere-desc">
+            <h3>„Despre vise și vedenii”</h3>
+            <p>Lucrarea aceasta abordează subiectul viselor și al vedenilor în contextul spiritual ortodox, explicând semnificațiile acestora.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+`,
+
+prieteni:`<div class="prieteni-container">
+    <h2>Prieteni</h2>
+
+       <div id="prieteniInfo">
+    <div class="prieteni-detail">
+        <h3>🟤 Părintele Paisie Olaru (1897–1990)</h3>
+        <p><strong>Duhovnicul blând de la Sihla și Sihăstria</strong></p>
+        <blockquote>„Paisie era ca o mamă. Îți simțeai sufletul mângâiat înainte să-ți spună ceva.” – Părintele Cleopa</blockquote>
+        <p>A fost <strong>duhovnicul Părintelui Cleopa</strong> și cel care l-a format duhovnicește. Blândețea, smerenia și lacrimile Părintelui Paisie au fost hrană pentru multe suflete. Împreună cu Părintele Cleopa, a dus o viață de nevoință în munții Neamțului, iar prietenia lor duhovnicească a fost un exemplu de iubire necondiționată față de Dumnezeu.</p>
+    </div>
+
+    <div class="prieteni-detail">
+        <h3>🟤 Părintele Ioanichie Bălan (1930–2007)</h3>
+        <p><strong>Ucenicul scriitor și martor al vremurilor</strong></p>
+        <blockquote>„Scrie, dar și trăiește ceea ce scrii.” – Cuviosul Paisie către Ioanichie</blockquote>
+        <p>A fost <strong>ucenicul apropiat</strong> al Părintelui Cleopa, alături de care a însoțit pelerinaje și a editat operele sale. Grație lui, cuvintele și amintirile Părintelui Cleopa au ajuns până la noi. Această prietenie a fost marcată de o legătură duhovnicească puternică și de respectul profund față de învățăturile Bisericii.</p>
+    </div>
+    <div class="prieteni-detail">
+        <h3>🟤 Părintele Arsenie Papacioc (1914–2011)</h3>
+        <p><strong>Duhovnicul de la Techirghiol</strong></p>
+        <blockquote>„Cleopa e ca un leu în cuvânt, eu sunt ca o pisică.” – Părintele Arsenie</blockquote>
+        <p>Deși aveau stiluri diferite, ambii erau <strong>mari duhovnici</strong> cu aceeași <em>dragoste pentru Hristos</em>. Împreună au fost un exemplu de respect reciproc și de completare în misiunea lor duhovnicească.</p>
+    </div>
+
+    <div class="prieteni-detail">
+        <h3>🟤 Părintele Justin Pârvu (1919–2013)</h3>
+        <p><strong>Mărturisitorul din închisoare și ctitorul de suflete</strong></p>
+        <blockquote>„Părintele Cleopa m-a învățat răbdarea și discernământul.”</blockquote>
+        <p>Un alt <strong>mare duhovnic al vremurilor noastre</strong>, care a suferit în temnițele comuniste și a ridicat mănăstirea Petru Vodă. Părintele Cleopa și Părintele Justin aveau o legătură duhovnicească profundă și s-au sprijinit reciproc în lucrarea lor misionară.</p>
+    </div>
+
+    <div class="prieteni-detail">
+        <h3>🟤 Cuviosul Paisie Aghioritul (1924–1994)</h3>
+        <p><strong>Pustnicul luminat din Athos</strong></p>
+        <blockquote>„Cine are credință dreaptă, smerenie și fapte bune, se mântuiește oriunde.”</blockquote>
+        <p>Întâlnirea lor din 1977 a fost scurtă, dar extrem de adâncă. <strong>Cu toate că nu s-au întâlnit mult, Părintele Cleopa și Cuviosul Paisie s-au recunoscut sufletește</strong>, iar cuvintele Cuviosului Paisie au rămas în inima Părintelui Cleopa până la sfârșitul vieții sale.</p>
+    </div>
+
+    <div class="prieteni-detail">
+        <h3>🟤 Sfântul Iustin Popovici (1894–1979)</h3>
+        <p><strong>Teologul sârb al Adevărului</strong></p>
+        <blockquote>„Ortodoxia este viață – nu teorie, nu filosofie.”</blockquote>
+        <p>Părintele Cleopa l-a vizitat la <strong>Mănăstirea Celie</strong>, iar întâlnirea lor a fost o <em>comuniune în duh</em> și în mărturisirea Adevărului, în vremuri grele pentru Biserică.</p>
+    </div>
+
+`,
+
+Citate:`
+<section class="sectiune-citate">
+    <h2 class="sectiune-titlu">Citate Inspiraționale</h2>
+    <div class="citate">
+        <blockquote class="citat citat-1">
+            <p>1. Inima este cămara întâlnirii cu Dumnezeu.</p>
+        </blockquote>
+        <blockquote class="citat citat-2">
+            <p>2. Toată fapta cea bună trebuie să o însoţim cu rugăciune, cum arată marele, dumnezeiescul apostol Pavel în epistola sa cea către tesaloniceni, unde zice: „Neîncetat vă rugaţi!” (I Tesaloniceni 5, 17).</p>
+        </blockquote>
+        <blockquote class="citat citat-3">
+            <p>3. Toţi sfinţii români au fost de mare folos pe vremea lor, în îmbărbătarea poporului, în credinţă, în timpul războaielor şi nu numai. Au luptat cu credinţă să păzească sfânta noastră ţară şi Biserica naţională şi tot poporul român. Ei au reuşit acestea nu numai cu cuvântul, ci şi cu viaţa şi trăirea lor.</p>
+        </blockquote>
+        <blockquote class="citat citat-4">
+            <p>4. Mânca-v-ar Raiul să vă mănânce.</p>
+        </blockquote>
+        <blockquote class="citat citat-5">
+            <p>5. În Sfânta Scriptură se pune mare preţ pe rugăciunea unora pentru alţii. Dacă n-ar avea niciun folos rugăciunea unora pentru alţii, atunci nici marele Apostol Pavel n-ar fi trebuit să îndemne la rugăciune pe ucenicul său Timotei spre un lucru ca acesta, scriindu-i: „Deci rogu-te, mai întâi de toate, să faci cereri, rugăciuni, mijlociri, mulţumiri pentru toţi oamenii (I Timotei 2, 1).</p>
+        </blockquote>
+        <blockquote class="citat citat-6">
+            <p>6. Iată ce vreau să vă mai spun: să nu socotim vreodată că am făcut început bun. Să dorim întotdeauna să punem început bun. Pentru că noi nu cunoaştem cum trebuie să fie un om care pune început bun, cum trebuie să se poarte. Să zicem: Doamne, dă-mi ajutorul Tău, să pun început bun, să-mi îndrept viaţa”.</p>
+        </blockquote>
+        <blockquote class="citat citat-7">
+            <p>7. Dacă ar fi omul fiară, n-ar fi o pagubă mare, că o fiară este mult inferioară omului, dar omul este chipul și asemănarea lui Dumnezeu. De aceea cei ce fac avorturi distrug chipul lui Dumnezeu din om, icoana Preasfintei Treimi pe pământ, și este foarte mare păcat.</p>
+        </blockquote>
+        <blockquote class="citat citat-8">
+            <p>8. Pentru mântuire sunt necesare trei lucruri. Primul: răbdare; al doilea: răbdare; al treilea: răbdare. Frate Ioane, da-ţi mai trebuie ceva: milostenie. Nu trebuie să dai vaca! Nu ţi-a cerut Dumnezeu vaca, niciodată! Ferească Dumnezeu! Nici viţelul. Da’ sticla de lapte trebuie s-o dai! Şi încă un lucru, frate Ioane: rugăciunea. Pasul şi Dumnezeu! Fără răbdare, fără milostenie şi fără rugăciune nu se poate mântui omul!.</p>
+        </blockquote>
+        <blockquote class="citat citat-9">
+            <p>9. Să ştiţi că rădăcina şi viaţa poporului nostru este credinţa cea dreaptă în Hristos, adică Ortodoxia.</p>
+        </blockquote>
+        <blockquote class="citat citat-10">
+            <p>10. De obicei, când este vorba de sine, omul îşi strică întotdeauna cântarul, adică măsura; îşi face lui mai multă dreptate, îşi alege partea cea mai bună, cea mai mare, cea mai frumoasă: plânge pentru sine mai mult decât pentru altul şi se bucură de sine mai mult decât pentru altul. Hristos, însă, a răstignit pe cruce iubirea de sine, dându-Şi viaţa pentru noi.</p>
+        </blockquote>
+    </div>
+</section>
+
+`,
+           
+            galerie: `<section class="galerie-foto">
+  <h2>Galerie Foto</h2>
+   
+  <div class="galerie-grid">
+    <figure>
+      <img src="Assets/poze/image4.jpg" alt="Părintele Ilie Cleopa">
+      <figcaption>Părintele Ilie Cleopa</figcaption>
+    </figure>
+    <figure>
+      <img src="Assets/poze/chilia-parintelui.jpg" alt="Chilia părintelui">
+      <figcaption>Chilia părintelui</figcaption>
+    </figure>
+    <figure>
+      <img src="Assets/poze/cimitirul-manastirii.jpg" alt="Cimitirul mănăstirii">
+      <figcaption>Cimitirul mănăstirii</figcaption>
+    </figure>
+    <figure>
+      <img src="Assets/poze/Mănăstirea_Sihăstria.jpg" alt="Mănăstirea Sihăstria">
+      <figcaption>Mănăstirea Sihăstria</figcaption>
+    </figure>
+   
+   
+    <figure>
+      <img src="Assets/poze/mormantul-parintelui-ilie-cleopa.jpg" alt="Mormantul Parintelui Ilie Cleopa">
+      <figcaption>Mormantul Parintelui Ilie Cleopa</figcaption>
+      
+    </figure>
+    <figure>
+      <img src="Assets/poze/inmormantarea-parintelui-cleopa-ilie.jpg" alt="Inmormantarea Parintelui Ilie Cleopa">
+      <figcaption>Inmormantarea Parintelui Ilie Cleopa</figcaption>
+     
+    </figure>
+     <figure>
+      <img src="Assets/poze/cuv_paisie_olaru.jpg" alt="Parintele Paisie Olaru">
+      <figcaption> Parintele Paisie Olaru </figcaption>
+    </figure>
+    <figure>
+      <img src="Assets/poze/ioanichie-balan.jpeg" alt="Parintele Ioanichie Balan">
+      <figcaption>Parintele Ioanichie Balan</figcaption>
+     
+    </figure>
+   <figure>
+      <img src="Assets/poze/Parintele-arsenie-papacioc.jpg" alt="Parintele Arsenie Papacioc">
+      <figcaption>Parintele Arsenie Papacioc</figcaption>
+     
+    </figure>
+      <figure>
+      <img src="Assets/poze/Justin-Parvu.jpg" alt="Parintele Justin Pârvu">
+      <figcaption>Parintele Justin Pârvu</figcaption>
+     
+    </figure>
+     
+      <figure>
+      <img src="Assets/poze/Sf.Paisie-Aghioritul.jpg" alt="Cuviosul Paisie Aghioritul">
+      <figcaption>Cuviosul Paisie Aghioritul</figcaption>
+     
+    </figure>
+     <figure>
+      <img src="Assets/poze/avva_iustin_1.jpg" alt="Sfântul Iustin Popovici">
+      <figcaption>Sfântul Iustin Popovici</figcaption>
+     
+    </figure>
+  </div>
+</section>
+`,
+           
+test: `
+    <h2>Test</h2>
+        
+        <iframe src="quiz.html" width="100%" height="500px" style="border: none;"></iframe>
+
+    
+`,
+
+           
+           chatbot: `
+        <h2>Chat-bot</h2>
+        
+        <iframe src="chat-bot.html" width="100%" height="500px" style="border: none;"></iframe>
+    `,
+    
+           
+           
+            contact: `
+    <h2>Contact</h2>
+    <form class="contact-form">
+        <label for="name">Nume</label>
+        <input type="text" id="name" name="name" placeholder="Numele tău complet">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="exemplu@email.com">
+
+        <label for="message">Mesaj</label>
+        <textarea id="message" name="message" rows="5" placeholder="Scrie-ne un gând, o întrebare sau o rugăciune..."></textarea>
+
+        <button type="submit">Trimite mesajul</button>
+    </form>
+`,
+
+            bibliografie: `<div class="bibliografie-container">
+    <h2>Bibliografie</h2>
+    <div class="centrat">
+    <p >Vă mulțumim că ați vizitat această pagină dedicată Părintelui Cleopa Ilie.</p></div>
+    <div class="surse-container">
+        <div class="surse-item">
+            <p><a href="https://doxologia.ro/viata-sfantului-cuvios-cleopa-de-la-sihastria" target="_blank">https://doxologia.ro/viata-sfantului-cuvios-cleopa-de-la-sihastria</a></p>
+        </div>
+         <div class="surse-container">
+        <div class="surse-item">
+            <p><a href="https://basilica.ro/zece-citate-celebre-ale-parintelui-cleopa-ilie/" target="_blank">https://basilica.ro/zece-citate-celebre-ale-parintelui-cleopa-ilie/</a></p>
+        </div>
+        <div class="surse-item">
+            <p><a href="https://sihastria.mmb.ro/parintele-cleopa-ilie-1912-1998" target="_blank">https://sihastria.mmb.ro/parintele-cleopa-ilie-1912-1998</a></p>
+        </div>
+       
+        <div class="surse-item">
+            <p><a href="https://www.crainou.ro/2023/07/21/pr-cleopa-ilie/" target="_blank">https://www.crainou.ro/2023/07/21/pr-cleopa-ilie/</a></p>
+        </div>
+        
+        <div class="surse-item">
+            <p><a href="https://www.crestinortodox.ro/religie/chilia-parintelui-cleopa-ilie-87821.html" target="_blank">https://www.crestinortodox.ro/religie/chilia-parintelui-cleopa-ilie-87821.html</a></p>
+        </div>
+    </div>
+</div>
+`,
+        };
+
+        document.querySelectorAll(".menu-item").forEach(item => {
+            item.addEventListener("click", function(e) {
+                e.preventDefault();
+                const section = this.dataset.section;
+                const mainContent = document.getElementById("main-content");
+
+                mainContent.innerHTML = content[section] || "<h2>Secțiune neimplementată</h2>";
+            });
+        });
+        ocument.getElementById('toggleContent').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    
+    const prieteniInfo = document.getElementById('prieteniInfo');
+    prieteniInfo.innerHTML = '';  
+
+   
+    const newDetails = `
+        <div class="prieteni-detail">
+            <h3>🟤 Părintele Arsenie Papacioc (1914–2011)</h3>
+            <p><strong>Duhovnicul de la Techirghiol</strong></p>
+            <blockquote>„Cleopa e ca un leu în cuvânt, eu sunt ca o pisică.” – Părintele Arsenie</blockquote>
+            <p>Deși aveau stiluri diferite, ambii erau <strong>mari duhovnici</strong> cu aceeași <em>dragoste pentru Hristos</em>. Împreună au fost un exemplu de respect reciproc și de completare în misiunea lor duhovnicească.</p>
+        </div>
+        <div class="prieteni-detail">
+            <h3>🟤 Părintele Justin Pârvu (1919–2013)</h3>
+            <p><strong>Mărturisitorul din închisoare și ctitorul de suflete</strong></p>
+            <blockquote>„Părintele Cleopa m-a învățat răbdarea și discernământul.”</blockquote>
+            <p>Un alt <strong>mare duhovnic al vremurilor noastre</strong>, care a suferit în temnițele comuniste și a ridicat mănăstirea Petru Vodă. Părintele Cleopa și Părintele Justin aveau o legătură duhovnicească profundă și s-au sprijinit reciproc în lucrarea lor misionară.</p>
+        </div>
+        <div class="prieteni-detail">
+            <h3>🟤 Cuviosul Paisie Aghioritul (1924–1994)</h3>
+            <p><strong>Pustnicul luminat din Athos</strong></p>
+            <blockquote>„Cine are credință dreaptă, smerenie și fapte bune, se mântuiește oriunde.”</blockquote>
+            <p>Întâlnirea lor din 1977 a fost scurtă, dar extrem de adâncă. <strong>Cu toate că nu s-au întâlnit mult, Părintele Cleopa și Cuviosul Paisie s-au recunoscut sufletește</strong>, iar cuvintele Cuviosului Paisie au rămas în inima Părintelui Cleopa până la sfârșitul vieții sale.</p>
+        </div>
+        <div class="prieteni-detail">
+            <h3>🟤 Sfântul Iustin Popovici (1894–1979)</h3>
+            <p><strong>Teologul sârb al Adevărului</strong></p>
+            <blockquote>„Ortodoxia este viață – nu teorie, nu filosofie.”</blockquote>
+            <p>Părintele Cleopa l-a vizitat la <strong>Mănăstirea Celie</strong>, iar întâlnirea lor a fost o <em>comuniune în duh</em> și în mărturisirea Adevărului, în vremuri grele pentru Biserică.</p>
+        </div>
+        <div class="prieteni-detail">
+            <h3>🟤 Părintele Epifanie Theodoropoulos (1930–1989)</h3>
+            <p><strong>Apărătorul credinței și vocea conștiinței grecești</strong></p>
+            <blockquote>„Părintele Cleopa este un dar pentru poporul român.”</blockquote>
+            <p>Întâlnirea lor în Grecia a fost una marcată de <strong>sinceritate și iubire față de Biserică</strong>, iar prietenia lor a fost un exemplu de legătură duhovnicească între popoare.</p>
+        </div>
+    `;
+
+    
+    prieteniInfo.innerHTML = newDetails;
+
+    
+    document.getElementById('toggleContent').style.display = 'none';
+});
+
+
+    </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker registered'))
+      .catch(error => console.error('Service Worker registration failed:', error));
+  }
+</script>
+
+</body>
+</html>

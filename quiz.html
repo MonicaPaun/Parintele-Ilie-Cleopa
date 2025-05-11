@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Părintele Cleopa Ilie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e67e22;
+    }
+
+    .question {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 2px solid #f5cba7;
+      border-radius: 10px;
+      background-color: #fff3e0;
+      animation: slideUp 0.8s ease;
+      transition: transform 0.3s;
+    }
+
+    .question:hover {
+      transform: scale(1.01);
+    }
+
+    .answers {
+      margin-top: 10px;
+    }
+
+    .answers input[type="radio"],
+    .answers input[type="text"] {
+      margin: 10px 0;
+      transition: all 0.2s;
+    }
+
+    .answers input[type="radio"]:hover,
+    .answers input[type="text"]:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .answers input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .submit-btn {
+      background-color: #e67e22;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      display: block;
+      margin: 30px auto;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .submit-btn:hover {
+      background-color: #d35400;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .result, .correct-answers {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2em;
+      animation: slideFadeIn 0.8s ease forwards;
+    }
+
+    .correct-answers ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .correct-answers li {
+      text-align: left;
+      margin: 6px 0;
+    }
+
+    .incorrect {
+      color: red;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #scoreMessage {
+      animation: highlight 1s ease-in-out infinite alternate;
+    }
+
+    
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes slideFadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes highlight {
+      from { color: #e67e22; }
+      to { color: #d35400; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Test Părintele Cleopa Ilie</h1>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <h2>1. În ce an s-a născut Părintele Cleopa Ilie?</h2>
+      <div class="answers">
+        <input type="radio" name="question1" value="1912"> 1912<br>
+        <input type="radio" name="question1" value="1922"> 1922<br>
+        <input type="radio" name="question1" value="1932"> 1932<br>
+        <input type="radio" name="question1" value="1942"> 1942<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Care era numele de botez al Părintelui Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question2" value="Ilie"> Ilie<br>
+        <input type="radio" name="question2" value="Cleopa"> Cleopa<br>
+        <input type="radio" name="question2" value="Ion"> Ion<br>
+        <input type="radio" name="question2" value="Vasile"> Vasile<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. În ce zi a trecut la cele veșnice Părintele Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question3" value="1 decembrie"> 1 decembrie<br>
+        <input type="radio" name="question3" value="2 decembrie"> 2 decembrie<br>
+        <input type="radio" name="question3" value="3 decembrie"> 3 decembrie<br>
+        <input type="radio" name="question3" value="4 decembrie"> 4 decembrie<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>4. În ce mănăstire a viețuit Părintele Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question4" value="Mănăstirea Sihăstria"> Mănăstirea Sihăstria<br>
+        <input type="radio" name="question4" value="Mănăstirea Putna"> Mănăstirea Putna<br>
+        <input type="radio" name="question4" value="Mănăstirea Neamț"> Mănăstirea Neamț<br>
+        <input type="radio" name="question4" value="Mănăstirea Voroneț"> Mănăstirea Voroneț<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>5. În ce an s-ar împlini 100 de ani de la nașterea Părintelui Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question5" value="2012"> 2012<br>
+        <input type="radio" name="question5" value="2022"> 2022<br>
+        <input type="radio" name="question5" value="2025"> 2025<br>
+        <input type="radio" name="question5" value="2032"> 2032<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>6. În ce an a intrat Părintele Cleopa în monahism?</h2>
+      <div class="answers">
+        <input type="radio" name="question6" value="1929"> 1929<br>
+        <input type="radio" name="question6" value="1939"> 1939<br>
+        <input type="radio" name="question6" value="1949"> 1949<br>
+        <input type="radio" name="question6" value="1959"> 1959<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>7. Ce subiect predomina în predicile Părintelui Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question7" value="Rugăciunea"> Rugăciunea<br>
+        <input type="radio" name="question7" value="Postul"> Postul<br>
+        <input type="radio" name="question7" value="Minunile"> Minunile<br>
+        <input type="radio" name="question7" value="Canonul"> Canonul<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>8. Ce sfaturi dădea Părintele Cleopa credincioșilor?</h2>
+      <div class="answers">
+        <input type="radio" name="question8" value="Răbdarea și iubirea aproapelui"> Răbdarea și iubirea aproapelui<br>
+        <input type="radio" name="question8" value="Munca și cinstea"> Munca și cinstea<br>
+        <input type="radio" name="question8" value="Să tacă"> Să tacă<br>
+        <input type="radio" name="question8" value="Să citească"> Să citească<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>9. Cine l-a influențat spiritual pe Părintele Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question9" value="Părintele Arsenie"> Părintele Arsenie<br>
+        <input type="radio" name="question9" value="Părintele Paisie"> Părintele Paisie<br>
+        <input type="radio" name="question9" value="Părintele Iustin"> Părintele Iustin<br>
+        <input type="radio" name="question9" value="Părintele Ilie"> Părintele Ilie<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>10. Pe cine îndemna mereu să-L iubească oamenii?</h2>
+      <div class="answers">
+        <input type="radio" name="question10" value="Biserica"> Biserica<br>
+        <input type="radio" name="question10" value="Preoții"> Preoții<br>
+        <input type="radio" name="question10" value="Dumnezeu"> Dumnezeu<br>
+        <input type="radio" name="question10" value="Familia"> Familia<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>11. Cine i-a fost duhovnic Părintelui Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question11" value="Părintele Paisie"> Părintele Paisie<br>
+        <input type="radio" name="question11" value="Părintele Arsenie"> Părintele Arsenie<br>
+        <input type="radio" name="question11" value="Părintele Daniel"> Părintele Daniel<br>
+        <input type="radio" name="question11" value="Părintele Iosif"> Părintele Iosif<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>12. Ce arma duhovnicească recomanda cel mai des Părintele Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question12" value="Postul"> Postul<br>
+        <input type="radio" name="question12" value="Rugăciune"> Rugăciune<br>
+        <input type="radio" name="question12" value="Tăcerea"> Tăcerea<br>
+        <input type="radio" name="question12" value="Iertarea"> Iertarea<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>13. În ce an a trecut la Domnul Părintele Cleopa?</h2>
+      <div class="answers">
+        <input type="radio" name="question13" value="1997"> 1997<br>
+        <input type="radio" name="question13" value="2000"> 2000<br>
+        <input type="radio" name="question13" value="1995"> 1995<br>
+        <input type="radio" name="question13" value="1999"> 1999<br>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>14. Ce tip de rugăciune recomanda părintele cel mai des?</h2>
+      <div class="answers">
+        <input type="radio" name="question14" value="Rugăciunea de dimineață"> Rugăciunea de dimineață<br>
+        <input type="radio" name="question14" value="Rugăciunea inimii"> Rugăciunea inimii<br>
+        <input type="radio" name="question14" value="Rugăciunea continuă"> Rugăciunea continuă<br>
+        <input type="radio" name="question14" value="Rugăciunea în genunchi"> Rugăciunea în genunchi<br>
+      </div>
+    </div>
+
+    <div class="question">
+        <h2>15. Completează următorul citat al Părintelui Cleopa:</h2>
+        <p>„Pentru mântuire sunt necesare trei lucruri: ___ , ___ și ___.”</p>
+        <div class="answers">
+            <input type="text" name="question15_1" placeholder="Primul cuvânt ">
+            <br><br>
+            <input type="text" name="question15_2" placeholder="Al doilea cuvânt ">
+            <br><br>
+            <input type="text" name="question15_3" placeholder="Al treilea cuvânt ">
+        </div>
+    </div>
+    
+
+    <button type="submit" class="submit-btn">Trimite Răspunsurile</button>
+  </form>
+
+  <div id="resultSection" class="result" style="display: none;">
+    <p id="scoreMessage"></p>
+  </div>
+
+  <div class="correct-answers" id="feedbackSection" style="display: none;">
+    <h3>Rezultate și corecturi:</h3>
+    <ul id="feedbackList"></ul>
+  </div>
+</div>
+
+
+<script>
+    const quizForm = document.getElementById("quizForm");
+    const resultSection = document.getElementById("resultSection");
+    const scoreMessage = document.getElementById("scoreMessage");
+    const feedbackSection = document.getElementById("feedbackSection");
+    const feedbackList = document.getElementById("feedbackList");
+  
+    const answers = {
+      question1: "1912",
+      question2: "Cleopa",
+      question3: "2 decembrie",
+      question4: "Mănăstirea Sihăstria",
+      question5: "2025",
+      question6: "1929",
+      question7: "Rugăciunea",
+      question8: "Răbdarea și iubirea aproapelui",
+      question9: "Părintele Paisie",
+      question10: "Dumnezeu",
+      question11: "Părintele Paisie",
+      question12: "Rugăciune",
+      question13: "1997",
+      question14: "Rugăciunea continuă",
+      question15_1: "răbdare",
+      question15_2: "răbdare",
+      question15_3: "răbdare"
+    };
+  
+    quizForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      let score = 0;
+      let feedbackHTML = "";
+      let answeredCount = 0;
+      let answered15 = false;
+  
+      for (const [question, correctAnswer] of Object.entries(answers)) {
+        if (question === "question15_1" || question === "question15_2" || question === "question15_3") continue;
+  
+        const radios = quizForm.querySelectorAll(`[name="${question}"]`);
+        const field = quizForm.querySelector(`[name="${question}"]`);
+        const radioChecked = quizForm.querySelector(`[name="${question}"]:checked`);
+  
+        let userAnswer = "";
+  
+        if (radios.length > 0) {
+          userAnswer = radioChecked ? radioChecked.value.trim() : "";
+        } else if (field && field.value) {
+          userAnswer = field.value.trim();
+        }
+  
+        if (userAnswer !== "") {
+          answeredCount++;
+          if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+            score++;
+          } else {
+            feedbackHTML += `<li class="incorrect">Ai greșit <strong>Întrebarea ${question.replace("question", "")}</strong> – răspuns corect: <span class="correct">${correctAnswer}</span></li>`;
+          }
+        } else {
+          feedbackHTML += `<li class="incorrect"><strong>Întrebarea ${question.replace("question", "")}</strong> nu a fost completată – răspuns corect: <span class="correct">${correctAnswer}</span></li>`;
+        }
+      }
+  
+      const q15_1 = quizForm.querySelector(`[name="question15_1"]`)?.value.trim().toLowerCase();
+const q15_2 = quizForm.querySelector(`[name="question15_2"]`)?.value.trim().toLowerCase();
+const q15_3 = quizForm.querySelector(`[name="question15_3"]`)?.value.trim().toLowerCase();
+
+if (q15_1 || q15_2 || q15_3) {
+  answeredCount++;
+  const isCorrect =
+    q15_1 === answers.question15_1.toLowerCase() &&
+    q15_2 === answers.question15_2.toLowerCase() &&
+    q15_3 === answers.question15_3.toLowerCase();
+
+  if (isCorrect) {
+    score++;
+  } else {
+    feedbackHTML += `<li class="incorrect">Ai greșit <strong>Întrebarea 15</strong> – răspuns corect: <span class="correct">${answers.question15_1}, ${answers.question15_2} și ${answers.question15_3}</span></li>`;
+  }
+} else {
+  feedbackHTML += `<li class="incorrect"><strong>Întrebarea 15</strong> nu a fost completată – răspuns corect: <span class="correct">${answers.question15_1}, ${answers.question15_2} și ${answers.question15_3}</span></li>`;
+}
+  
+      scoreMessage.innerHTML = `Ai obținut <strong>${score}/15</strong> puncte! Ai răspuns la <strong>${answeredCount}</strong> întrebări.`;
+      feedbackList.innerHTML = feedbackHTML;
+  
+      resultSection.style.display = "block";
+      feedbackSection.style.display = "block";
+  
+      resultSection.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+  
+  
+  </body>
+  </html>
