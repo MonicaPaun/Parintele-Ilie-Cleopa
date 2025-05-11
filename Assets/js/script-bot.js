@@ -5,6 +5,10 @@ const fileInput = document.querySelector("#file-input");
 const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
 const fileCancelButton = document.querySelector("#file-cancel");
 
+// În fișierul JavaScript
+require('dotenv').config();  // Aceasta va citi fișierul .env
+
+const apiKey = process.env.GOOGLE_API_KEY;
 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
